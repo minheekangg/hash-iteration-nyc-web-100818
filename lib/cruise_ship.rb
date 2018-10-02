@@ -6,11 +6,13 @@
 # suite_e: "Crumpet the Elf"
 # }
 
+
+winner = ""
 def select_winner(passengers)
   # add the code snippet here!
   passengers.each do |suite, name|
     if name[0] == "A" && suite == "Suite_a"
-      puts name
+      winner << name
     end
   end
 end
